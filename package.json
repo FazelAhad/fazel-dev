@@ -16,7 +16,8 @@
     "lucide-react": "^0.294.0",
     "clsx": "^2.0.0",
     "tailwind-merge": "^2.2.0",
-    "next-themes": "^0.2.1"
+    "next-themes": "^0.2.1",
+    "resend": "^3.2.0"
   },
   "devDependencies": {
     "@types/node": "^20.10.6",

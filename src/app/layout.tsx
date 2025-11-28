@@ -11,10 +11,16 @@ export const metadata: Metadata = {
   description: "Portfolio website of Fazel Ahad, an Odoo Developer and Frontend Engineer from Afghanistan",
   keywords: ["Fazel Ahad", "Odoo Developer", "Frontend Developer", "React", "Next.js", "Portfolio"],
   authors: [{ name: "Fazel Ahad" }],
+  icons: {
+    icon: "/fazel logo.jpeg",
+    shortcut: "/fazel logo.jpeg",
+    apple: "/fazel logo.jpeg",
+  },
   openGraph: {
     title: "Fazel Ahad - Odoo Developer & Frontend Engineer",
     description: "Portfolio website of Fazel Ahad",
     type: "website",
+    images: ["/fazel logo.jpeg"],
   },
 };
 

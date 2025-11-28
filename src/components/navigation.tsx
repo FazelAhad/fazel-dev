@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { Moon, Sun, Menu, X } from "lucide-react";
 import { useTheme } from "next-themes";
@@ -30,8 +31,17 @@ export function Navigation() {
     <nav className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex h-16 items-center justify-between">
-          <Link href="/" className="text-xl font-bold">
-            Fazel<span className="text-primary">Ahad</span>
+          <Link href="/" className="flex items-center space-x-2">
+            <Image
+              src="/fazel logo.jpeg"
+              alt="Fazel Ahad Logo"
+              width={40}
+              height={40}
+              className="rounded-full object-cover"
+            />
+            <span className="text-xl font-bold">
+              Fazel<span className="text-primary">Ahad</span>
+            </span>
           </Link>
 
           {/* Desktop Navigation */}

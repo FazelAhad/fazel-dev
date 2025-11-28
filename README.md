@@ -45,13 +45,25 @@ Open [http://localhost:3000](http://localhost:3000) to view the portfolio.
 
 1. **CV File**: Add your CV/Resume PDF file to the `public` folder and name it `cv.pdf`. The "Download CV" button on the home page will automatically link to it.
 
-2. **Contact Email**: Update the email address in `src/app/contact/page.tsx` with your actual email address.
+2. **Contact Form Email Setup**: 
+   - Create a `.env.local` file in the root directory
+   - Add the following environment variables:
+     ```
+     RESEND_API_KEY=re_your_api_key_here
+     CONTACT_EMAIL=info@fazelahad.dev
+     RESEND_FROM_EMAIL=onboarding@resend.dev
+     ```
+   - Get your Resend API key from [https://resend.com/api-keys](https://resend.com/api-keys)
+   - For production, use a verified domain email for `RESEND_FROM_EMAIL`
+   - The contact form will work without the API key (it will log submissions), but won't send actual emails
 
-3. **Social Links**: Update the GitHub and LinkedIn links in `src/app/contact/page.tsx` with your actual profiles.
+3. **Contact Email Display**: Update the email address in `src/app/contact/page.tsx` with your actual email address.
 
-4. **Project Images**: The project images are currently using placeholder images from Unsplash. You can replace them in `src/data/projects.ts` with your actual project screenshots.
+4. **Social Links**: Update the GitHub and LinkedIn links in `src/app/contact/page.tsx` with your actual profiles.
 
-5. **Photography Images**: Replace the placeholder images in `src/app/photography/page.tsx` with your actual photography work.
+5. **Project Images**: The project images are currently using placeholder images from Unsplash. You can replace them in `src/data/projects.ts` with your actual project screenshots.
+
+6. **Photography Images**: Replace the placeholder images in `src/app/photography/page.tsx` with your actual photography work.
 
 ## Project Structure
 
@@ -72,7 +84,19 @@ This project is ready to deploy on Vercel:
 1. Push your code to GitHub
 2. Import the repository to Vercel
 3. Vercel will automatically detect Next.js and configure the build settings
-4. Your portfolio will be live!
+4. **Add Environment Variables in Vercel:**
+   - Go to your project settings in Vercel
+   - Navigate to **Settings** → **Environment Variables**
+   - Add the following variables:
+     - `RESEND_API_KEY` = Your Resend API key (e.g., `re_xxxxxxxxxx`)
+     - `CONTACT_EMAIL` = Your email address (e.g., `info@fazelahad.dev`)
+     - `RESEND_FROM_EMAIL` = Your verified domain email in Resend (e.g., `contact@yourdomain.com`)
+   - Make sure to select **Production**, **Preview**, and **Development** environments
+   - Click **Save**
+   - Redeploy your application for the changes to take effect
+5. Your portfolio will be live!
+
+**Important:** Never commit your `.env.local` file or API keys to GitHub. Environment variables should only be added in Vercel's dashboard for production.
 
 ## Customization
 
