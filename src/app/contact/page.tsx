@@ -152,10 +152,10 @@ export default function Contact() {
                 <div>
                   <p className="text-sm text-muted-foreground mb-1">Email</p>
                   <a
-                    href="mailto:contact@fazelahad.dev"
+                    href="mailto:info@fazel.dev"
                     className="font-medium text-primary hover:underline"
                   >
-                    contact@fazelahad.dev
+                    info@fazelahad.dev
                   </a>
                 </div>
               </CardContent>
@@ -200,7 +200,7 @@ export default function Contact() {
                     className="w-full justify-start"
                     asChild
                   >
-                    <a href="mailto:contact@fazelahad.dev">
+                    <a href="mailto:info@fazelahad.dev">
                       <Mail className="mr-2 h-4 w-4" />
                       Email Me
                     </a>
