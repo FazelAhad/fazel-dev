@@ -21,7 +21,7 @@ export default function Projects() {
           My Projects
         </h1>
         <p className="text-xl text-muted-foreground mb-12">
-          A collection of projects I've worked on, from academic assignments to
+          A collection of projects I&apos;ve worked on, from academic assignments to
           real-world applications.
         </p>
 

@@ -42,21 +42,21 @@ export default function About() {
             </CardHeader>
             <CardContent className="space-y-4 text-muted-foreground">
               <p>
-                I'm Fazel Ahad, a 21-year-old developer from Afghanistan
+                I&apos;m Fazel Ahad, a 21-year-old developer from Afghanistan
                 passionate about building modern web applications and Odoo
                 solutions. I specialize in frontend development with React and
-                Next.js, and I'm also an Odoo developer working on enterprise
+                Next.js, and I&apos;m also an Odoo developer working on enterprise
                 solutions.
               </p>
               <p>
-                Currently, I'm expanding my skills in photography and working
+                Currently, I&apos;m expanding my skills in photography and working
                 on various projects including OCR applications, face detection
-                systems, and automation tools. I'm particularly interested in
+                systems, and automation tools. I&apos;m particularly interested in
                 building a formal letter automation web app to help Afghan
                 citizens generate government-approved letters efficiently.
               </p>
               <p>
-                I'm continuously learning and improving, especially in English
+                I&apos;m continuously learning and improving, especially in English
                 and Turkish languages, and I dedicate specific hours daily to
                 study and practice.
               </p>
@@ -109,7 +109,7 @@ export default function About() {
                   Language Learning
                 </h3>
                 <p>
-                  I'm actively working on improving my English and Turkish
+                  I&apos;m actively working on improving my English and Turkish
                   language skills. I maintain a structured study schedule with
                   dedicated hours each day to practice and learn.
                 </p>
@@ -130,7 +130,7 @@ export default function About() {
                   Continuous Growth
                 </h3>
                 <p>
-                  My journey is about continuous improvement - whether it's
+                  My journey is about continuous improvement - whether it&apos;s
                   mastering new technologies, building better applications, or
                   expanding my communication skills. Every day is an opportunity
                   to learn something new.

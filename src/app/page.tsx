@@ -20,7 +20,7 @@ export default function Home() {
           transition={{ duration: 0.5, delay: 0.1 }}
           className="text-4xl sm:text-5xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-primary to-purple-600 bg-clip-text text-transparent"
         >
-          Hi, I'm Fazel Ahad
+          Hi, I&apos;m Fazel Ahad
         </motion.h1>
         <motion.p
           initial={{ opacity: 0, y: 20 }}
